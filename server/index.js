@@ -3,14 +3,14 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
-// const controller = require('./controller');
 const emailController = require('./emailController');
 const session = require('express-session');
-const PORT = 3400;
+const PORT = 3030;
 const axios = require('axios');
 
 
 const app = express();
+app.use( express.static( `${__dirname}/../build` ) );
 app.use(bodyParser.json());
 app.use(session({
     resave: false,
@@ -26,5 +26,10 @@ massive(process.env.CONNECTION_STRING).then( dbInstance => {
 }).catch(err => console.log('Database connection error', err));
 
 app.post(`/api/sendEmail`, emailController.sendEmail);
+
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+})
 
 app.listen(PORT, () => console.log(`Server listening on Port:${PORT}`));

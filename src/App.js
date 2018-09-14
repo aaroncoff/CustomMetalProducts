@@ -76,16 +76,17 @@ class App extends Component {
                         </div>
                           <div className="contactInfo">
 
-                              <div>© Custom Metal Products</div>
+                              {/* <div>© Custom Metal Products</div> */}
 
-                              <div className="Address">
+                              {/* <div className="Address">
                                     <div>459 Cadillac Pkwy</div>
                                     <div>Dallas, GA 30157</div>
-                              </div>
+                              </div> */}
 
-                              <h4 className="phone">
+                              {/* <h4 className="phone">
                                   678-426-8802
-                              </h4> 
+                              </h4>  */}
+                              <a href="tel:+16784268802"  className="phone">678-426-8802</a>
                             </div>
                       </div> 
                       
