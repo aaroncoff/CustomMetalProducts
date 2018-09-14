@@ -10,16 +10,10 @@ module.exports = {
 
         let transporter = nodemailer.createTransport({
             service: "gmail",
-            // host: 'smtp.gmail.com',
+
             auth: {
-                // xoauth2: xoauth2.createXOAUth2Generator({
                     user: process.env.NODEMAILER_ADDRESS,
                     pass: process.env.NODEMAILER_PASSWORD,
-                    // clientId: '1035148877305-q0cfv2ucgpvgl9kiek07fpe7uvr6f825.apps.googleusercontent.com',
-                    // clientSecret: 'Xxx72MtczOBK8XyWBn6ShM13',
-                    // refreshToken: '',
-                    // type: "OAuth2"
-                // })
             },
             tls: {
                 rejectUnauthorized: false
@@ -30,16 +24,9 @@ module.exports = {
         let mailOptions = {
             from: name + ' ' + process.env.NODEMAILER_ADDRESS,
             to: process.env.NODEMAILER_ADDRESS,
-            // subject: 'Comments/Concern',
             text: name + ' ' + email + ' ' + text
         }
 
-        // var message = {
-        //     from: process.env.NODEMAILER_ADDRESS,
-        //     to: process.env.NODEMAILER_ADDRESS,
-        //     text: req.body.text,
-        //     html: `<p>From: ${req.body.name}, ${req.body.email}</p>`+
-        //             `<p>${req.body.text}</p>`
         
 
     console.log('process.env.NODEMAILER_ADDRESS', process.env.NODEMAILER_ADDRESS)

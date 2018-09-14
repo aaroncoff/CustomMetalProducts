@@ -10,26 +10,16 @@ class App extends Component {
     return (
       <div className="App">
                  <div className="topparent">
-                      {/* <div className="phoneNumber">
-                          678-426-8802
-                      </div> */}
-                      {/* <img src={require('../src/Media/Images/logo.png')} alt="logo" className='logo'></img> */}
+
                       <img src={require('./Media/Images/banner3.jpg')} alt={'hero'} className='hero'></img>
 
                    
-                    <div className="topchild">
+                    <div className="topchild">    
 
-                    {/* <span><img href="../src/Media/Images/logo.png" className="Logo" alt="logo"/><h1 className="Intro">#1 Glass Rack Fabricator in the Southeast</h1></span> */}
-                        
-
-
-
-                       
-
-
-                      </div>
 
                     </div>
+
+                </div>
 
 
 
@@ -70,25 +60,13 @@ class App extends Component {
                         
                         <div className="bodychild">  
 
-                                                {routes2} 
+                          {routes2} 
        
                           
 
                         </div>
                       </div>  
-                      {/* <div className="reviewParent">
-                          <div className="reviewChild">
-       
-                              <img src={require('./Media/Images/stars.png')} alt={'stars'} className='stars'></img>
-                              <h2>"Their quality is top notch!  They do it fast and they do it right."</h2>
-                              <h4>-Braydon Anderson, happy customer</h4>
-                          </div>
-                      </div> */}
-                      {/* <div className="quoteParent">
-                            <div className="quoteChild">
-                               <Link to='/contact'>CLICK HERE TO GET A FREE QUOTE!</Link>
-                            </div>
-                      </div>  */}
+  
                       <div className="footerparent">
                                 
                         <div className="footerchild">

@@ -13,18 +13,11 @@ export default class Home extends Component {
       
                                   <div className='outer'>
                                     <div className="body-img-parent">
-                                                {/* <h1>#1 GLASS RACK FABRICATOR IN THE SOUTHEAST</h1> */}
-                                        {/* <Title className="titleText"/>
-                                        <Guarantee className="guaranteeText"/>
-                                        <Warranty className="warrantyText"/> */}
+      
                                         <img src={require('./Media/Images/HomeBackground.jpeg')} alt={"body-img"} className='body-img'></img>
-                                        {/* <HomeBackground/> */}
+                              
                                       <div className="body-img-child"> 
 
-                                      
-                                      {/* <a href="#" id="bottle" onclick="document.location=this.id+'.html';return false;" > */}
-                                        {/* <img src="./Media/Images/clock.png" alt="clock" class="thumbnails" /> */}
-                                      {/* </a> */}
 
 
                                       </div>
