@@ -6,100 +6,99 @@ import routes2 from './routes2';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = { isDropdownEnabled: false };
+    this.dropdownClicked = this.dropdownClicked.bind(this);
+    this.onWindowClicked = this.onWindowClicked.bind(this);
+  }
+
+  componentDidMount() {
+    window.onclick = this.onWindowClicked;
+  }
+
+  dropdownClicked() {
+    let { isDropdownEnabled } = this.state;
+    this.setState({ isDropdownEnabled: !isDropdownEnabled });
+  }
+
+  onWindowClicked(event) {
+    if (!event.target.matches('.dropbtn')) {
+      // this is the "React" way to handle it especially with only a single dropdown
+      this.setState({ isDropdownEnabled: false });
+
+      // if you had multiple dropdowns you'd want to do something like this...
+      // var dropdowns = document.getElementsByClassName("dropdown-content");
+      // var i;
+      // for (i = 0; i < dropdowns.length; i++) {
+      //   var openDropdown = dropdowns[i];
+      //   if (openDropdown.classList.contains('show')) {
+      //     openDropdown.classList.remove('show');
+      //   }
+      // }
+    }
+  }
+
   render() {
     return (
       <div className="App">
-                 <div className="topparent">
-
-                      <img src={require('./Media/Images/banner3.jpg')} alt={'hero'} className='hero'></img>
-
-                   
-                    <div className="topchild">    
-
-
-                    </div>
-
-                </div>
-
-
-
-
-                    <div className="navparent">
-                      <div className="navchild">
-
-
-                              <input id="toggle-menu" type="checkbox"/>
-                              <label for="toggle-menu" className="menu-on">MENU</label>
-
-                              <label for="toggle-menu" className="menu-off"></label>
-
-
-  
-
-
-
-                              <nav className='primary-nav'> 
-                                <Link to='/'>HOME </Link>
-                                <Link to='/about'>ABOUT US </Link>
-                                <div class="dropdown">
-                                  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                                  <div id="myDropdown" class="dropdown-content">
-                                    <Link to='GlassRackGal'>Glass Racks Gallery</Link>
-                                    <Link to='MetalFabGal'>Metal Fabrication Gallery</Link>
-                                    {/* <a href="#">Glass Racks</a>
+        <div className="topparent">
+          <img src={require('./Media/Images/banner3.jpg')} alt={'hero'} className='hero'></img>
+          <div className="topchild">
+          </div>
+        </div>
+        <div className="navparent">
+          <div className="navchild">
+            <input id="toggle-menu" type="checkbox" />
+            <label htmlFor="toggle-menu" className="menu-on">MENU</label>
+            <label htmlFor="toggle-menu" className="menu-off"></label>
+            <nav className='primary-nav'>
+              <Link to='/'>HOME </Link>
+              <Link to='/about'>ABOUT US </Link>
+              <div className="dropdown">
+                <button onClick={this.dropdownClicked} className="dropbtn">Dropdown</button>
+                <div id="myDropdown" className={`dropdown-content ${this.state.isDropdownEnabled ? 'show' : ''}`}>
+                  <Link to='/glassracks'>Glass Racks Gallery</Link>
+                  <Link to='MetalFabGal'>Metal Fabrication Gallery</Link>
+                  {/* <a href="#">Glass Racks</a>
                                     <a href="#">Metal Fabrication</a> */}
-                                  </div>
-                                </div>
-                                {/* <Link to='/products'>Products</Link> */}
-                                {/* <Link to='/wallet'>Make A Payment </Link>  */}
-                                <Link to='/contact'>CONTACT US </Link>
-                              </nav>
-                          
+                </div>
+              </div>
+              {/* <Link to='/products'>Products</Link> */}
+              {/* <Link to='/wallet'>Make A Payment </Link>  */}
+              <Link to='/contact'>CONTACT US </Link>
+            </nav>
+          </div>
+        </div>
+        <div className="routes">
+          {routes}
+        </div>
+        <div className="bodyparent">
+          <div className="bodychild">
+            {routes2}
+          </div>
+        </div>
+        <div className="footerparent">
+          <div className="footerchild">
+          </div>
+          <div className="contactInfo">
 
+            {/* <div>© Custom Metal Products</div> */}
 
-                        </div>
-
-                      </div> 
-                      <div className="routes">
-                          {routes}
-
-                      </div>
-                      
-                      <div className="bodyparent">
-                        
-                        <div className="bodychild">  
-
-                          {routes2} 
-       
-                          
-
-                        </div>
-                      </div>  
-  
-                      <div className="footerparent">
-                                
-                        <div className="footerchild">
-
-
-
-                        </div>
-                          <div className="contactInfo">
-
-                              {/* <div>© Custom Metal Products</div> */}
-
-                              {/* <div className="Address">
+            {/* <div className="Address">
                                     <div>459 Cadillac Pkwy</div>
                                     <div>Dallas, GA 30157</div>
                               </div> */}
 
-                              {/* <h4 className="phone">
+            {/* <h4 className="phone">
                                   678-426-8802
                               </h4>  */}
-                              <a href="tel:+16784268802"  className="phone">678-426-8802</a>
-                            </div>
-                      </div> 
-                      
+            <a href="tel:+16784268802" className="phone">678-426-8802</a>
+          </div>
         </div>
+      </div>
     );
   }
 }

@@ -587,7 +587,10 @@ a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  
+}
+
+.dropdown-content.show{
+  display:block;
 }
 
 .dropdown-content a {
@@ -615,7 +618,7 @@ a {
   margin: 0 auto;
   width: 100%;
   display: flex;
-  height: 500px
+  min-height: 500px;
 }
 
 .bodyChild {
@@ -623,5 +626,11 @@ a {
   width: 75%;
   display: flex;
   justify-content: center;
-  height: 500px;
+  min-height: 500px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

@@ -6,7 +6,6 @@ import Contact from './Components/Contact';
 import GlassRackGal from './Components/Galleries/GlassRackGal';
 import MetalFabGal from './Components/Galleries/MetalFabGal';
 
-
 const routes2 = (
     <Switch>
 
