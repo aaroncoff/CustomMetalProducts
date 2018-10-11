@@ -41,8 +41,17 @@ class App extends Component {
                               <nav className='primary-nav'> 
                                 <Link to='/'>HOME </Link>
                                 <Link to='/about'>ABOUT US </Link>
-                                {/* <Link to='/products'>Products</Link>
-                                <Link to='/wallet'>Make A Payment </Link> */}
+                                <div class="dropdown">
+                                  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                  <div id="myDropdown" class="dropdown-content">
+                                    <Link to='GlassRackGal'>Glass Racks Gallery</Link>
+                                    <Link to='MetalFabGal'>Metal Fabrication Gallery</Link>
+                                    {/* <a href="#">Glass Racks</a>
+                                    <a href="#">Metal Fabrication</a> */}
+                                  </div>
+                                </div>
+                                {/* <Link to='/products'>Products</Link> */}
+                                {/* <Link to='/wallet'>Make A Payment </Link>  */}
                                 <Link to='/contact'>CONTACT US </Link>
                               </nav>
                           

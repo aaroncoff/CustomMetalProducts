@@ -1,7 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
- 
+
+// export default class GalleryHome extends Component {
+//     render(){
+//         return(
+//             <div>
+
+
 const IMAGES =
 [{
         src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
@@ -19,15 +25,24 @@ const IMAGES =
         tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
         caption: "Boats (Jeshu John - designerspics.com)"
 },
- 
+
 {
         src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
 }]
- 
+
 render(
-        <Gallery images={IMAGES}/>,
+
+        <div className='grGalPaent'>
+            <div className='grGalChild'>
+                <Gallery images={IMAGES}/>
+            </div>
+        </div>,
         document.getElementById('example-0')
 );
+            // </div>
+    //     )
+    // }
+// }
