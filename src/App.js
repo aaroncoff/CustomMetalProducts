@@ -50,7 +50,7 @@ class App extends Component {
                 <button onClick={this.dropdownClicked} className="dropbtn">Products</button>
                 <div id="myDropdown" className={`dropdown-content ${this.state.isDropdownEnabled ? 'show' : ''}`}>
                   <Link to='/glassracks'>Glass Racks</Link>
-                  <Link to='MetalFabGal'>Metal Fabrication</Link>
+                  <Link to='/metalfab'>Metal Fabrication</Link>
                 </div>
               </div>
               <Link to='/contact'>CONTACT US </Link>
