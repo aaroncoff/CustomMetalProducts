@@ -25,20 +25,9 @@ class App extends Component {
   }
 
   onWindowClicked(event) {
-    if (!event.target.matches('.dropbtn')) {
-      // this is the "React" way to handle it especially with only a single dropdown
-      this.setState({ isDropdownEnabled: false });
-
-      // if you had multiple dropdowns you'd want to do something like this...
-      // var dropdowns = document.getElementsByClassName("dropdown-content");
-      // var i;
-      // for (i = 0; i < dropdowns.length; i++) {
-      //   var openDropdown = dropdowns[i];
-      //   if (openDropdown.classList.contains('show')) {
-      //     openDropdown.classList.remove('show');
-      //   }
-      // }
-    }
+      if (!event.target.matches('.dropbtn')) {
+          this.setState({ isDropdownEnabled: false });
+      }
   }
 
   render() {
@@ -57,17 +46,13 @@ class App extends Component {
             <nav className='primary-nav'>
               <Link to='/'>HOME </Link>
               <Link to='/about'>ABOUT US </Link>
-              <div className="dropdown">
-                <button onClick={this.dropdownClicked} className="dropbtn">Dropdown</button>
+              <div className="dropdown dd-list">
+                <button onClick={this.dropdownClicked} className="dropbtn">Products</button>
                 <div id="myDropdown" className={`dropdown-content ${this.state.isDropdownEnabled ? 'show' : ''}`}>
-                  <Link to='/glassracks'>Glass Racks Gallery</Link>
-                  <Link to='MetalFabGal'>Metal Fabrication Gallery</Link>
-                  {/* <a href="#">Glass Racks</a>
-                                    <a href="#">Metal Fabrication</a> */}
+                  <Link to='/glassracks'>Glass Racks</Link>
+                  <Link to='MetalFabGal'>Metal Fabrication</Link>
                 </div>
               </div>
-              {/* <Link to='/products'>Products</Link> */}
-              {/* <Link to='/wallet'>Make A Payment </Link>  */}
               <Link to='/contact'>CONTACT US </Link>
             </nav>
           </div>
