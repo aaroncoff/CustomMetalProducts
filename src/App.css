@@ -451,8 +451,16 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  
+}
 
+.aboutUs {
+  font-size: 24px;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  line-height: 2;
+  font-family: 'Raleway', sans-serif;
 }
 
 .aboutContainer {
@@ -642,4 +650,8 @@ a {
 .gallery-container {
   max-width: 72rem;
   margin: 0 auto;
+}
+
+.tile-viewport > img {
+  height: auto !important;
 }

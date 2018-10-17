@@ -2,29 +2,90 @@ import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
 import '../../App.css';
 
-const IMAGES =
-        [{
-            src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-            thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 212,
-            tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
-            caption: "Boats (Jeshu John - designerspics.com)"
-        },
-        {
-            src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-            thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 174,
-            isSelected: true,
-            caption: "After Rain (Jeshu John - designerspics.com)"
-        },
-        {
-            src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-            thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 212
-        }];
+const IMAGES = [{
+        src: require("../../Media/Images/Gallery/IMG_3829.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3830.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3831.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3827.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3838.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3837.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3832.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3835.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3836.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3834.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3833.jpg"),
+        caption: "Recycling Facility conveyor And Structural Fab/Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3853.jpg"),
+        caption: "Glass L-Buck & Glass Tote"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3855.jpg"),
+        caption: "Dump Chipper Body"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3857.jpg"),
+        caption: "Dump Chipper Body"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3856.jpg"),
+        caption: "84”x108” Double Sided Van Rack"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3854.jpg"),
+        caption: "Dump Chipper Body"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3858.jpg"),
+        caption: "Dump Chipper Body"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3859.jpg"),
+        caption: "Dump Chipper Body"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3861.jpg"),
+        caption: "Glass L-Buck & Glass Tote"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3860.jpg"),
+        caption: "Dump Chipper Body"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3862.jpg"),
+        caption: "Piping"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3864.jpg"),
+        caption: "Industrial Handrails"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3865.jpg"),
+        caption: "Industrial Handrails"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3863.jpg"),
+        caption: "Piping"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3866.jpg"),
+        caption: "Piping"
+    }].map(img => {
+        img.thumbnail = img.src;
+        img.thumbnailWidth = 320;
+        img.thumbnailHeight = 174;
+        img.orientation = 1;
+
+        return img;
+    });
+
 
 export default class MetalFabGal extends Component {
     constructor(props) {
