@@ -44,9 +44,9 @@ const IMAGES = [{
     }, {
         src: require("../../Media/Images/Gallery/IMG_3857.jpg"),
         caption: "Dump Chipper Body"
-    }, {
-        src: require("../../Media/Images/Gallery/IMG_3856.jpg"),
-        caption: "84”x108” Double Sided Van Rack"
+    // }, {
+    //     src: require("../../Media/Images/Gallery/IMG_3856.jpg"),
+    //     caption: "84”x108” Double Sided Van Rack"
     }, {
         src: require("../../Media/Images/Gallery/IMG_3854.jpg"),
         caption: "Dump Chipper Body"
@@ -77,6 +77,69 @@ const IMAGES = [{
     }, {
         src: require("../../Media/Images/Gallery/IMG_3866.jpg"),
         caption: "Piping"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3812.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3814.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3817.jpg"),
+        caption: "Piping"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3815.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3816.jpg"),
+        caption: "Piping"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3818.jpg"),
+        caption: "Piping"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3813.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3823.jpg"),
+        caption: "Filter House Fabrication & Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3824.jpg"),
+        caption: "Filter House Fabrication & Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3822.jpg"),
+        caption: "Filter House Fabrication & Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3819.jpg"),
+        caption: "Piping"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3821.jpg"),
+        caption: "Filter House Fabrication & Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3820.jpg"),
+        caption: "Filter House Fabrication & Installation"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3825.jpg"),
+        caption: "Duct Work"
+    }, {
+        src: require("../../Media/Images/Gallery/IMG_3826.jpg"),
+        caption: "Duct Work"
+    }, {
+        src: require("../../Media/Images/Gallery/mtl1.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/mtl2.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/mtl3.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/mtl4.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/mtl5.jpg"),
+        caption: ""
+    }, {
+        src: require("../../Media/Images/Gallery/mtl6.jpg"),
+        caption: ""
     }].map(img => {
         img.thumbnail = img.src;
         img.thumbnailWidth = 320;
@@ -97,6 +160,14 @@ export default class MetalFabGal extends Component {
     render() {
         return (
             <div className="gallery-container clearfix">
+            <h1>
+                If it is made of metal, we can make it
+            </h1>
+                <h2>Piping, Filter House Fabrication & Installation, 
+                    Duct Work, Industrial Handrails, Dump Chipper Body, 
+                    Recycling Facility Conveyer, Structural Fabrication/Installation
+                </h2>
+                {/* <p>If it is made of metal, we can make it.</p> */}
                 <Gallery images={IMAGES} />
             </div>
         );

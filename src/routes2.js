@@ -5,6 +5,7 @@ import Home from './Home';
 import Contact from './Components/Contact';
 import GlassRackGal from './Components/Galleries/GlassRackGal';
 import MetalFabGal from './Components/Galleries/MetalFabGal';
+import Review from './Components/Review';
 
 const routes2 = (
     <Switch>
@@ -13,6 +14,7 @@ const routes2 = (
         <Route path='/contact' component={Contact}/>
         <Route path='/glassracks' component={GlassRackGal}/>
         <Route path='/metalfab' component={MetalFabGal}/>
+        <Route path='/reviews' component={Review}/>
         {/* <Route path='/products' component={Gallery}/> */}
 
 

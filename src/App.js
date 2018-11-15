@@ -36,7 +36,9 @@ class App extends Component {
         <div className="topparent">
           <img src={require('./Media/Images/banner3.jpg')} alt={'hero'} className='hero'></img>
           <div className="topchild">
+          <a href='https://www.facebook.com/Custom-Metal-Products-426651564470418/' className='facebook'><img src={require('./Media/Images/fb-white')}></img></a>
           </div>
+          
         </div>
         <div className="navparent">
           <div className="navchild">
@@ -44,8 +46,8 @@ class App extends Component {
             <label htmlFor="toggle-menu" className="menu-on">MENU</label>
             <label htmlFor="toggle-menu" className="menu-off"></label>
             <nav className='primary-nav'>
-              <Link to='/'>HOME </Link>
-              <Link to='/about'>ABOUT US </Link>
+              <Link to='/'>HOME</Link>
+              <Link to='/about'>ABOUT US</Link>
               <div className="dropdown dd-list">
                 <button onClick={this.dropdownClicked} className="dropbtn">Products</button>
                 <div id="myDropdown" className={`dropdown-content ${this.state.isDropdownEnabled ? 'show' : ''}`}>
@@ -53,7 +55,8 @@ class App extends Component {
                   <Link to='/metalfab'>Metal Fabrication</Link>
                 </div>
               </div>
-              <Link to='/contact'>CONTACT US </Link>
+              <a className='revText' href='https://goo.gl/cB5xd9'>LEAVE A REVIEW</a>
+              <Link to='/contact'>CONTACT US</Link>
             </nav>
           </div>
         </div>

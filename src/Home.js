@@ -17,8 +17,8 @@ export default class Home extends Component {
                 <div className="reviewParent">
                     <div className="reviewChild">
                         <img src={require('./Media/Images/stars.png')} alt={'stars'} className='stars'></img>
-                        <h2>"Their quality is top notch!  They do it fast and they do it right."</h2>
-                        <h4>-Braydon Anderson</h4>
+                        <h2>"Custom Metal Products does outstanding work.  The quality, attention to detail, and production turn around is why we continue to send all our fabrication needs to Jonas and his staff."</h2>
+                        <h4>-Frankie Willingham, President, All Things Outdoors, LLC.</h4>
                     </div>
                 </div>
             </div>
