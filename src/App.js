@@ -36,7 +36,7 @@ class App extends Component {
         <div className="topparent">
           <img src={require('./Media/Images/banner3.jpg')} alt={'hero'} className='hero'></img>
           <div className="topchild">
-          <a href='https://www.facebook.com/Custom-Metal-Products-426651564470418/' className='facebook'><img src={require('./Media/Images/fb-white')}></img></a>
+          <a href='https://www.facebook.com/Custom-Metal-Products-426651564470418/' className='facebook'><img src={require('./Media/Images/fb-white.png')}></img></a>
           </div>
           
         </div>
