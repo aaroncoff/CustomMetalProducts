@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "CustomMetalProducts",
+      "script": "npm",
+      "args": "start"
+    }
+  ]
+}
