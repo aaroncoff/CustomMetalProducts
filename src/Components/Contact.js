@@ -27,7 +27,7 @@ export default class Contact extends Component{
 //         email: '',
 //         text: ''
 //        })
-       
+
 //    }
 
     handleSubmitButton(e){
@@ -38,7 +38,7 @@ export default class Contact extends Component{
             email: email,
             text: text
         }
-        axios.post(`/api/sendEmail`, body).then(response => {
+        axios.post(`/api/guest/contact`, body).then(response => {
             console.log('-----response', response.data)
             this.setState({
                 name: '',
@@ -53,13 +53,13 @@ export default class Contact extends Component{
 
     render(){
         return(
-        
+
             <div className='contactParent'>
 
                 <h1>CONTACT US TODAY FOR A FREE QUOTE</h1>
 
                                 <div className='manualContact'>
-                    
+
                     <div className='digits'>
                         <div className='phone'>PHONE: 678-426-8802</div>
                     </div>

@@ -6,8 +6,10 @@ const massive = require('massive');
 const emailController = require('./emailController');
 const session = require('express-session');
 const PORT = 3400;
-const axios = require('axios');
+// const axios = require('axios');
 
+// Import Routes
+const guestRoutes = require('./routes/guest')
 
 const app = express();
 app.use( express.static( `${__dirname}/../build` ) );
@@ -25,7 +27,9 @@ massive(process.env.CONNECTION_STRING).then( dbInstance => {
     app.set('db', dbInstance);
 }).catch(err => console.log('Database connection error', err));
 
-app.post(`/api/sendEmail`, emailController.sendEmail);
+// Use routes
+app.use('/api/guest', guestRoutes)
+// app.post(`/api/sendEmail`, emailController.sendEmail);
 
 const path = require('path')
 app.get('*', (req, res)=>{
