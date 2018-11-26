@@ -718,7 +718,7 @@ a {
 .dropdown-content.show{
   display:block;
   margin: 0 auto;
-
+  width: 100%;
 }
 /* @media(max-width:590px){
   .dropdown dd-list{
