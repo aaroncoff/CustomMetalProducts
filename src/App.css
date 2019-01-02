@@ -25,7 +25,6 @@
   left: 0;
 }
 
-
 .hero {
   margin: 0 auto;
   width: 100%;
@@ -57,7 +56,6 @@
     height: 130px;
   }
 }
-
 
 
 @media(max-width: 350px){
@@ -109,7 +107,6 @@
     top: 40px;
   }
 }
-
 
 @media(max-width: 875px){
   .hero {
@@ -293,8 +290,8 @@
 
 @media(max-width: 590px){
   .navparent, .navchild {
-   font-size: 7pt;
-   height: 90px;
+    font-size: 7pt;
+    height: 90px;
 
   }
 }
@@ -322,7 +319,6 @@
 
 }
 
-
 .primary-nav {
   width: 100%;
   margin: 0 auto;
@@ -332,14 +328,12 @@
   /* padding-bottom: 10px; */
 }
 
-
 /* @media(max-width: 850px) {
   .primary-nav {
     margin-top: 24px;
     font-size: 10pt;
   }
 } */
-
 
 a {
   color: white;
@@ -355,14 +349,14 @@ a {
   a {
     margin-bottom: 10px;
   }
-  }
+}
 
 @media(min-width: 590px) {
-a {
-  font-weight: 30;
-  font-size: 12pt;
+  a {
+    font-weight: 30;
+    font-size: 12pt;
 
-}
+  }
 }
 
 @media(min-width: 850px) {
@@ -371,16 +365,16 @@ a {
     font-size: 17pt;
     /* margin-top: 5px; */
   }
-  }
+}
 
-  @media(min-width: 1200px) {
-    a {
-      font-weight: 10;
-      font-size: 27pt;
-      /* margin-top: 5px; */
-      /* margin-bottom: 50px; */
-    }
-    }
+@media(min-width: 1200px) {
+  a {
+    font-weight: 10;
+    font-size: 27pt;
+    /* margin-top: 5px; */
+    /* margin-bottom: 50px; */
+  }
+}
 
 .primary-nav Link {
   margin: 0 auto;
@@ -516,7 +510,7 @@ a {
 
 @media(min-width: 750px) {
   .input {
-  width: 500px;
+    width: 500px;
   }
 }
 
@@ -543,16 +537,14 @@ a {
 
 }
 
-
 .routes {
-    background-repeat: no-repeat;
-    background-size: auto;
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
 
 }
-
 
 .footerparent {
   margin: 0 auto;
@@ -604,12 +596,10 @@ a {
   font-weight: 20;
 }
 
-
 .stars {
   width: 30%;
   margin-top: 20px;
 }
-
 
 
 .aboutParent {
@@ -656,9 +646,7 @@ a {
   width: 75%;
   justify-content: center;
 
-
 }
-
 
 
 .aboutContainer > p {
@@ -666,7 +654,6 @@ a {
   margin-bottom: 30px;
   width: 20%;
 }
-
 
 
 .Jonas {
@@ -677,7 +664,6 @@ a {
   padding-bottom: 20px;
 
 }
-
 
 .Jeanine {
   height: 350px;
@@ -710,7 +696,6 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 
 .person1 > p {
   padding-top: 160px;
@@ -896,73 +881,73 @@ a {
 }
 @media(min-width: 1200px){
   .staffpic{
-     height: 20%;
+    height: 20%;
   }
 }
 
 @media(max-width: 1100px){
   .staffpic {
-     height: 80%;
+    height: 80%;
   }
 }
 
 @media(max-width: 1000px){
   .staffpic {
-     height: 75%;
+    height: 75%;
   }
 }
 
 @media(max-width: 900px){
   .staffpic {
-     height: 70%;
+    height: 70%;
   }
 }
 
 @media(max-width: 800px){
   .staffpic {
-     height: 65%;
+    height: 65%;
   }
 }
 
 @media(max-width: 650px){
   .staffpic {
-     height: 55%;
+    height: 55%;
   }
 }
 
 @media(max-width: 550px){
   .staffpic {
-     height: 45%;
+    height: 45%;
   }
 }
 
 @media(max-width: 500px){
   .staffpic {
-     height: 40%;
+    height: 40%;
   }
 }
 
 @media(max-width: 450px){
   .staffpic {
-     height: 35%;
+    height: 35%;
   }
 }
 
 @media(max-width: 275px){
   .staffpic {
-     height: 30%;
+    height: 30%;
   }
 }
 
 @media(max-width: 150px){
   .staffpic {
-     height: 25%;
+    height: 25%;
   }
 }
 
 @media(max-width: 50px){
   .staffpic {
-     height: 20%;
+    height: 20%;
   }
 }
 
@@ -973,73 +958,73 @@ a {
 }
 @media(min-width: 1200px){
   .Desk{
-     height: 20%;
+    height: 20%;
   }
 }
 
 @media(max-width: 1100px){
   .Desk {
-     height: 80%;
+    height: 80%;
   }
 }
 
 @media(max-width: 1000px){
   .Desk {
-     height: 75%;
+    height: 75%;
   }
 }
 
 @media(max-width: 900px){
   .Desk {
-     height: 70%;
+    height: 70%;
   }
 }
 
 @media(max-width: 800px){
   .Desk {
-     height: 65%;
+    height: 65%;
   }
 }
 
 @media(max-width: 650px){
   .Desk {
-     height: 55%;
+    height: 55%;
   }
 }
 
 @media(max-width: 550px){
   .Desk {
-     height: 45%;
+    height: 45%;
   }
 }
 
 @media(max-width: 500px){
   .Desk {
-     height: 40%;
+    height: 40%;
   }
 }
 
 @media(max-width: 450px){
   .Desk {
-     height: 35%;
+    height: 35%;
   }
 }
 
 @media(max-width: 275px){
   .Desk {
-     height: 30%;
+    height: 30%;
   }
 }
 
 @media(max-width: 150px){
   .Desk {
-     height: 25%;
+    height: 25%;
   }
 }
 
 @media(max-width: 50px){
   .Desk {
-     height: 20%;
+    height: 20%;
   }
 }
 
@@ -1050,73 +1035,73 @@ a {
 }
 @media(min-width: 1200px){
   .Desk2{
-     height: 20%;
+    height: 20%;
   }
 }
 
 @media(max-width: 1100px){
   .Desk2 {
-     height: 80%;
+    height: 80%;
   }
 }
 
 @media(max-width: 1000px){
   .Desk2 {
-     height: 75%;
+    height: 75%;
   }
 }
 
 @media(max-width: 900px){
   .Desk2 {
-     height: 70%;
+    height: 70%;
   }
 }
 
 @media(max-width: 800px){
   .Desk2 {
-     height: 65%;
+    height: 65%;
   }
 }
 
 @media(max-width: 650px){
   .Desk2 {
-     height: 55%;
+    height: 55%;
   }
 }
 
 @media(max-width: 550px){
   .Desk2 {
-     height: 45%;
+    height: 45%;
   }
 }
 
 @media(max-width: 500px){
   .Desk2 {
-     height: 40%;
+    height: 40%;
   }
 }
 
 @media(max-width: 450px){
   .Desk2 {
-     height: 35%;
+    height: 35%;
   }
 }
 
 @media(max-width: 275px){
   .Desk2 {
-     height: 30%;
+    height: 30%;
   }
 }
 
 @media(max-width: 150px){
   .Desk2 {
-     height: 25%;
+    height: 25%;
   }
 }
 
 @media(max-width: 50px){
   .Desk2 {
-     height: 20%;
+    height: 20%;
   }
 }
 
@@ -1126,14 +1111,14 @@ a {
 
 @media(max-width: 750px){
   .aboutUs {
-     font-size: 2.3vw;
+    font-size: 2.3vw;
   }
 }
 
 @media(max-width: 720px){
   .aboutUs {
-     font-size: 2.2vw;
-     font-weight: bold;
+    font-size: 2.2vw;
+    font-weight: bold;
   }
 }
 
@@ -1172,22 +1157,22 @@ a {
   .aboutUs {
      /* he ight: 15%; */
 
-  /* }
+/* }
 }
 @media(max-width: 275px){
-  .aboutUs {
-     height: 30%;
-  }
+.aboutUs {
+   height: 30%;
+}
 }
 @media(max-width: 150px){
-  .aboutUs {
-     height: 25%;
-  }
+.aboutUs {
+   height: 25%;
+}
 }
 @media(max-width: 50px){
-  .aboutUs {
-     height: 20%;
-  }
+.aboutUs {
+   height: 20%;
+}
 }  */
 
 .facebook {
