@@ -24,6 +24,7 @@ export default class About extends Component {
             President</p></div>
           <div className='person5'><img src={require('../Media/Images/Staff/3.jpg')} alt={'Rhonda'}
                                         className={'Rhonda'}></img><p>Rhonda Crow - HR Manager</p></div>
+          <img src={require('../Media/Images/Staff/Jonas-and-Blake-at-Desk.jpg')} alt={'Desk'} className={'Desk'}></img>
           <img src={require('../Media/Images/Staff/Rhonda-at-Desk.jpg')} alt={'Rhonda-Desk'} className={'Desk2'}></img>
         </div>
       </div>
