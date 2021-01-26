@@ -9,7 +9,7 @@ module.exports = {
         console.log('req.body', name, email, text)
 
         let transporter = nodemailer.createTransport({
-            service: "gmail",
+            service: "yahoo",
 
             auth: {
                     user: process.env.NODEMAILER_ADDRESS,
